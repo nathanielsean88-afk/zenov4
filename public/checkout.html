@@ -36,6 +36,29 @@
         .qris-placeholder { background:var(--dark3); border:2px dashed var(--border2); border-radius:10px; padding:28px 16px; text-align:center; margin:10px 0; }
         .qris-note { font-size:0.75rem; color:var(--muted); background:rgba(245,158,11,0.08); border:1px solid rgba(245,158,11,0.2); border-radius:8px; padding:10px; margin-top:10px; }
 
+        /* QRIS box — centered */
+        .qris-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+        .qris-box h4 {
+            width: 100%;
+            text-align: center;
+        }
+        .qris-box img {
+            display: block;
+            margin: 0 auto;
+            max-width: 220px;
+            border-radius: 12px;
+        }
+        .qris-note {
+            width: 100%;
+            text-align: center;
+        }
+
         /* Steps */
         .steps { background:var(--dark3); border:1px solid var(--border2); border-radius:10px; padding:16px; margin-bottom:18px; }
         .steps h3 { font-family:'Exo 2',sans-serif; font-weight:800; font-size:0.88rem; margin-bottom:12px; }
@@ -130,8 +153,8 @@
                     <div class="qris-box">
                         <h4>📱 Scan QRIS</h4>
                         <!-- Uncomment baris ini dan ganti dengan path QRIS kamu: -->
-                        <img src="/qris.png" alt="QRIS Zeno Store" style="max-width:220px;border-radius:12px;">
-                        <div class="qris-note">⚠️ Pastikan nominal transfer sesuai dengan harga produk. QRIS bisa dipakai dari semua e-wallet & mobile banking.</div>
+                        <img src="/qris.png" alt="QRIS Zeno Store">
+                        <div class="qris-note">⚠️ Pastikan nominal transfer sesuai dengan harga produk. QRIS bisa dipakai dari semua e-wallet &amp; mobile banking.</div>
                     </div>
                 </div>
             </div>
@@ -143,7 +166,7 @@
                 <div class="step"><div class="step-num">2</div><div class="step-text">Screenshot bukti pembayaran</div></div>
                 <div class="step"><div class="step-num">3</div><div class="step-text">Upload screenshot di bawah</div></div>
                 <div class="step"><div class="step-num">4</div><div class="step-text">Klik "Kirim via WhatsApp" — bukti otomatis terkirim ke admin</div></div>
-                <div class="step"><div class="step-num">5</div><div class="step-text">Admin konfirmasi & link download dikirim (maks 1x24 jam)</div></div>
+                <div class="step"><div class="step-num">5</div><div class="step-text">Admin konfirmasi &amp; link download dikirim (maks 1x24 jam)</div></div>
             </div>
 
             <!-- Upload bukti -->
@@ -173,7 +196,7 @@
                 <div class="big">🎉</div>
                 <h2>PESANAN TERKIRIM!</h2>
                 <p>WhatsApp admin sudah terbuka dengan bukti transfer kamu.</p>
-                <p>Admin akan konfirmasi & kirimkan link download dalam <strong style="color:var(--blue-bright)">1x24 jam</strong>.</p>
+                <p>Admin akan konfirmasi &amp; kirimkan link download dalam <strong style="color:var(--blue-bright)">1x24 jam</strong>.</p>
                 <div class="order-id-box" id="orderIdText"></div>
                 <p style="font-size:0.78rem;color:var(--muted)">Simpan Order ID ini untuk pengecekan status pesanan kamu.</p>
                 <div class="btn-actions">
